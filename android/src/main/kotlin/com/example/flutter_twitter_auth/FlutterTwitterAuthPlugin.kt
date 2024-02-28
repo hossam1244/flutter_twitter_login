@@ -11,11 +11,12 @@ import io.flutter.plugin.common.MethodChannel.Result
 /** FlutterTwitterAuthPlugin */
 class FlutterTwitterAuthPlugin : FlutterPlugin, MethodCallHandler {
 
+    // https://firebase.flutter.dev/docs/auth/social/
+    // https://developer.twitter.com/en/docs/authentication/oauth-2-0/authorization-code
+
     companion object {
         private const val CHANNEL = "flutter_twitter_auth"
         private const val LOGIN_EVENT_CHANNEL = "flutter_twitter_login/event"
-
-
     }
 
     private lateinit var channel: MethodChannel
